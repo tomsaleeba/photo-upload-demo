@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "oeh-photo-upload-demo",
+  "scripts": {
+    "start": "cd src/ && python -m SimpleHTTPServer 5000"
+  },
+  "dependencies": {
+    "uppy": "^0.23.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}

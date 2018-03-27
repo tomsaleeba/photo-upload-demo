@@ -1,0 +1,12 @@
+version: '3'
+services:
+  oeh:
+    image: adelaideecoinformatics/ctms-rest-api-docker:latest
+    depends_on:
+      - mongodb
+    ports:
+      - '8880:80'
+    environment:
+      - CRA_MONGO_HOST=mongodb
+  tus:
+    image: bhstahl/tus-node-deploy
