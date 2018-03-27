@@ -1,3 +1,11 @@
+# Quickstart
+```bash
+npm i
+npm start # uses python to start an HTTP server in src/
+# open your browser to http://localhost:5000/
+```
+If `npm start` fails, just launch a web server in the `src/` directory. Currently uploading will fail, watch this space for a server to accept the uploads.
+
 ## TODO
 Server:
  - swap from XHR client to TUS so we can use the TUS server
