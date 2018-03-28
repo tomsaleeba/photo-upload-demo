@@ -1,12 +1,12 @@
 version: '3'
 services:
-  oeh:
-    image: adelaideecoinformatics/ctms-rest-api-docker:latest
-    depends_on:
-      - mongodb
+  client:
+    image: nginx
     ports:
-      - '8880:80'
-    environment:
-      - CRA_MONGO_HOST=mongodb
+      - '5000:80'
+    volumes:
+      - './src/:/usr/share/nginx/html:ro'
   tus:
-    image: bhstahl/tus-node-deploy
+    image: tusproject/tusd
+    ports:
+      - '9967:1080'
